@@ -10,17 +10,26 @@
 ###############################################################
 ################# SCANNING & ENUMERATION  #####################
 ###############################################################
+# For Simple Scan
+#nmap -sC -sV -A ip
+# For Intense Scan
 #nmap -p 1-65535 -T4 -A -v ip
+#find / -perm -u=s -type f 2>/dev/null
+# Try python first if found in this find list 
+#python -c 'import pty;pty.spawn("/bin/sh")'
+# Start dirb on url nonhttps (Not all url could be found ;)
 # Start Sparta for the IP with the same
+# check ftp anonymous login
 #cewl http://ip/?q=node/1 -w /root/Desktop/custom_wordlist.txt
-
+# Observer everything files like hex, pcap file, folders, there could be password lyring front of you
+# If No Inherent vulnerability found? Brute force could be the only way! 
 
 ###############################################################
 ################## GAINING ACCESS #############################
 ###############################################################
 #hydra -l tiago -P /root/Desktop/custom_wordlist.txt ssh://ip
 # Check Nikto section in sparta scan
-
+#searchsploit -t openssh 7.1
 
 ##################################################################
 ############## ESCALATING ACCESS - MAINTAINIG ACCESS #############
