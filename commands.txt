@@ -1,0 +1,12 @@
+#nmap -p 1-65535 -T4 -A -v ip
+#Takes around 5-8 mins to run
+
+#cewl http://ip/?q=node/1 -w /root/Desktop/custom_wordlist.txt
+#cewl take less than 30 seconds
+
+#hydra -l tiago -P /root/Desktop/custom_wordlist.txt ssh://ip
+#hydra can tak around 5-8 mins
+
+#first thing to check after ssh login done if successful above - id and sudo -s su - 
+
+#use Linux-exploit-suggester.sh by wget gitlink  (Enumeration script in python for windows)
