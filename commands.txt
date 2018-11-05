@@ -1,12 +1,45 @@
-#nmap -p 1-65535 -T4 -A -v ip
-#Takes around 5-8 mins to run
+#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#
+#$#$#$#$#$#$#$#$   NOTES For OSCP By OM $ #$#$#$#$#$#$#$#$#$#$#
+#$#$#$##$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$
 
+###############################################################
+################## INFORMATION GATHERING ######################
+###############################################################
+#Hit Site, IP check, Google dorks, 
+
+###############################################################
+################# SCANNING & ENUMERATION  #####################
+###############################################################
+#nmap -p 1-65535 -T4 -A -v ip
+#Start Sparta for the IP with the same
 #cewl http://ip/?q=node/1 -w /root/Desktop/custom_wordlist.txt
-#cewl take less than 30 seconds
+
+
+###############################################################
+################## GAINING ACCESS #############################
+###############################################################
 
 #hydra -l tiago -P /root/Desktop/custom_wordlist.txt ssh://ip
-#hydra can tak around 5-8 mins
+#Check Nikto section in sparta scan
+
+
+##################################################################
+############## ESCALATING ACCESS - MAINTAINIG ACCESS #############
+##################################################################
 
 #first thing to check after ssh login done if successful above - id and sudo -s su - 
-
 #use Linux-exploit-suggester.sh by wget gitlink  (Enumeration script in python for windows)
+# chmod 755 first to run that downloaded shell and run it check exploit cpp programs in ext-url
+# Download exploit and check cpp program if possible or just run it with gcc or g++ 
+#g++ -Wall -pedantic -02 -std=c++11 -pthread -o dcow file.cpp -lutil
+#once you get the executable file of the same run it and check 
+
+
+
+################################################################
+################ EARASING FOOTPRINTS ###########################
+################################################################
+
+#For OSCP no need to erase Footprint! 
+#Just hit the root and find the flag value to submit in report
+# Boot to Root!! :)
