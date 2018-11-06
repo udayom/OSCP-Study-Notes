@@ -22,10 +22,12 @@
 #python -c 'import pty;pty.spawn("/bin/sh")'
 
 # Start dirb on url nonhttps (Not all url could be found ;)
-# Start Sparta for the IP with the same
 # check ftp anonymous login
-# Start Sparta for the IP with the same
 #cewl http://ip/?q=node/1 -w /root/Desktop/custom_wordlist.txt
+#Check for Local File Inclusion if PhP - /?lang=php://filter/convert.base64-encode/resource=index
+#Reverse Shell - http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+
 
 # Observer everything files like hex, pcap file, folders, there could be password lyring front of you
 # If No Inherent vulnerability found? Brute force could be the only way! 
